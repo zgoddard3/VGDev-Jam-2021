@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip[] footsteps;
     private int footstepIndex = 0;
+    public GameObject bug;
+    private Vector3 bugSpawn;
+    private int bugCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         canvas = transform.Find("Canvas").GetComponent<Canvas>();
         audioSource = GetComponent<AudioSource>();
+        bugSpawn = transform.position;
     }
 
     // Update is called once per frame
@@ -49,6 +53,11 @@ public class PlayerController : MonoBehaviour
 
         if (lantern.fuel <= 0f) {
             Die();
+        }
+        if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50) {
+            GameObject.Instantiate(bug, bugSpawn, transform.rotation);
+            bugSpawn = transform.position;
+            bugCount += 1;
         }
     }
 

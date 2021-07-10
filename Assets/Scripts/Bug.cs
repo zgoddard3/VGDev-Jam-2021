@@ -12,20 +12,25 @@ public class Bug : MonoBehaviour
     private Rigidbody2D rb;
     private bool flipped = false;
     private Transform body;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         body = transform.Find("Body");
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 displacement = player.transform.position - transform.position;
+        audioSource.volume = Mathf.Max(0, 1 - displacement.magnitude/10);
         if (displacement.magnitude < 10) {
             chasing = true;
+            
         }
 
         if (chasing) {
