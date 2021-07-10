@@ -8,7 +8,7 @@ public class Lantern : MonoBehaviour
     public float maxFuel = 5f;
     public float burnRate;
     private Transform lightTransform;
-    
+
 
     // Start is called before the first frame update
     void Start()

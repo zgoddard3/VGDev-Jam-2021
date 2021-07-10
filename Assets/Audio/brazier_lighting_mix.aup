@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="brazier_lighting_mix_data" version="1.3.0" audacityversion="2.2.2" sel0="2.9137272322" sel1="2.9137272322" vpos="0" h="0.0000000000" zoom="393.6538696289" rate="8000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="brazier_lighting" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="8000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="18432">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808407.au" len="18432" min="-0.037479" max="0.03908" rms="0.007569"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="brazier_test" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.01019513" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="146980">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a10.au" len="146980" min="-0.091705" max="0.079803" rms="0.007388"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
