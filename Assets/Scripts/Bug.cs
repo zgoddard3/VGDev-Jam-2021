@@ -13,6 +13,8 @@ public class Bug : MonoBehaviour
     private bool flipped = false;
     private Transform body;
     private AudioSource audioSource;
+    [Range(0f,1f)]
+    public float maxVolume = 0.8f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class Bug : MonoBehaviour
     void Update()
     {
         Vector2 displacement = player.transform.position - transform.position;
-        audioSource.volume = Mathf.Max(0, 1 - displacement.magnitude/10);
+        audioSource.volume = Mathf.Max(0, 1 - displacement.magnitude/10) * maxVolume;
         if (displacement.magnitude < 10) {
             chasing = true;
             

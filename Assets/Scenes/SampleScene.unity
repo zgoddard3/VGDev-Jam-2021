@@ -44347,10 +44347,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 861876961444308352, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
-      propertyPath: bug
-      value: 
-      objectReference: {fileID: 475805458483620825, guid: 077d9e5e1d1d1fd4584363fedca62f06, type: 3}
     - target: {fileID: 861876961444308354, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -44398,14 +44394,6 @@ PrefabInstance:
     - target: {fileID: 861876961444308355, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 861876962491292873, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
-      propertyPath: maxFuel
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 861876962491292873, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
-      propertyPath: burnRate
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c4482159752534292d136fcfaf9ca4, type: 3}
@@ -44534,6 +44522,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 803703617304933470, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
+    - target: {fileID: 7573997173112304401, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
+      propertyPath: litSprite
+      value: 
+      objectReference: {fileID: -2749451381591260690, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
     - target: {fileID: 7573997173112304402, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
       propertyPath: m_RootOrder
       value: 13
