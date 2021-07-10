@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bug;
     private Vector3 bugSpawn;
     private int bugCount = 0;
+    public Node nearest;
 
     // Start is called before the first frame update
     void Start()

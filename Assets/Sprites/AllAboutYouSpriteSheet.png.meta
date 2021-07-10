@@ -68,6 +68,9 @@ TextureImporter:
   - first:
       213: 803703617304933470
     second: AllAboutYouSpriteSheet_21
+  - first:
+      213: -7354129941828899269
+    second: AllAboutYouSpriteSheet_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -614,6 +617,27 @@ TextureImporter:
       bones: []
       spriteID: e5438268e24572b00800000000000000
       internalID: 803703617304933470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 114
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e693128c1e0f990800000000000000
+      internalID: -7354129941828899269
       vertices: []
       indices: 
       edges: []

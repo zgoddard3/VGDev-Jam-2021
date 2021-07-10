@@ -28,7 +28,7 @@ public class Lantern : MonoBehaviour
 
     public void AddFuel(float amount) {
         fuel += amount;
-        if (fuel < maxFuel) {
+        if (fuel > maxFuel) {
             fuel = maxFuel;
         }
     }
