@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Transform spriteRoot;
     private bool flipped;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRoot = transform.Find("Sprites");
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,5 +36,6 @@ public class PlayerController : MonoBehaviour
             spriteRoot.localScale = Vector3.one;
         }
         
+        animator.SetFloat("Speed", speed * move.magnitude);
     }
 }

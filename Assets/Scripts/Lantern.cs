@@ -8,13 +8,13 @@ public class Lantern : MonoBehaviour
     public float fuel;
     public float maxFuel = 5f;
     public float burnRate;
-    private Transform light;
+    private Transform lightTransform;
     private Canvas canvas;
     // Start is called before the first frame update
     void Start()
     {
         fuel = maxFuel;
-        light = transform.Find("Light");
+        lightTransform = transform.Find("Light");
         canvas = transform.Find("Canvas").GetComponent<Canvas>();
     }
 
@@ -26,7 +26,7 @@ public class Lantern : MonoBehaviour
             fuel = 0;
             Die();
         }
-        light.localScale = Vector3.one * fuel;
+        lightTransform.localScale = Vector3.one * fuel;
     }
 
     private void Die() {
