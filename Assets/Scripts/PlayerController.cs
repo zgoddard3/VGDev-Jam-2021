@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     public Lantern lantern;
     private Canvas canvas;
+    private AudioSource audioSource;
+    public AudioClip[] footsteps;
+    private int footstepIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,7 @@ public class PlayerController : MonoBehaviour
         spriteRoot = transform.Find("Sprites");
         animator = GetComponent<Animator>();
         canvas = transform.Find("Canvas").GetComponent<Canvas>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,5 +60,11 @@ public class PlayerController : MonoBehaviour
     private IEnumerator ReturnToMenu() {
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void PlayFootstep() {
+        audioSource.clip = footsteps[footstepIndex];
+        footstepIndex += 1;
+        audioSource.Play();
     }
 }
