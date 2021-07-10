@@ -8,12 +8,14 @@ public class Lantern : MonoBehaviour
     public float maxFuel = 5f;
     public float burnRate;
     private Transform lightTransform;
+    private AudioSource audioSource;
 
 
     // Start is called before the first frame update
     void Start()
     {
         lightTransform = transform.Find("Light");
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class Lantern : MonoBehaviour
 
     public void AddFuel(float amount) {
         fuel += amount;
+        audioSource.Play();
         if (fuel < maxFuel) {
             fuel = maxFuel;
         }
