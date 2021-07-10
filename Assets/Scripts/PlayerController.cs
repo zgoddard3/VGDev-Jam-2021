@@ -65,6 +65,9 @@ public class PlayerController : MonoBehaviour
     public void PlayFootstep() {
         audioSource.clip = footsteps[footstepIndex];
         footstepIndex += 1;
+        if (footstepIndex >= footsteps.Length) {
+            footstepIndex = 0;
+        }
         audioSource.Play();
     }
 }

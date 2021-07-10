@@ -35,7 +35,6 @@ public class Bug : MonoBehaviour
             if (move.magnitude > 1f) {
                 move.Normalize();
             }
-            print(move);
             rb.velocity = move * speed;
             if (flipped) {
                 body.localScale = new Vector3(-1f,1f,1f);
