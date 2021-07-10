@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public GameObject bug;
     private Vector3 bugSpawn;
     private int bugCount = 0;
+    public AudioClip Death_theme_no_air;
+    private AudioSource[] allAudioSources;
 
     // Start is called before the first frame update
     void Start()
@@ -61,12 +64,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+    }
+
     private void Die() {
+        StopAllAudio();
         canvas.enabled = true;
         StartCoroutine("ReturnToMenu");
     }
 
+
     private IEnumerator ReturnToMenu() {
+        //audioSource.clip = Death_theme_no_air;
+        //audioSource.Play();
+        //yield return new WaitWhile(() => audioSource.isPlaying);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainMenu");
     }
