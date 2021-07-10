@@ -26,7 +26,7 @@ public class Lantern : MonoBehaviour
             fuel = 0;
             Die();
         }
-        lightTransform.localScale = Vector3.one * fuel;
+        lightTransform.localScale = Vector3.one * (fuel + Mathf.Sin(10*Time.time) * fuel / 50f);
     }
 
     private void Die() {
