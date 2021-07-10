@@ -19,7 +19,6 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 targetPosition = target.position;
         targetPosition.z = transform.position.z;
-        print(targetPosition);
         transform.position = Vector3.Lerp(transform.position, targetPosition, damping);
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,12 +10,16 @@ public class PlayerController : MonoBehaviour
     private Transform spriteRoot;
     private bool flipped;
     private Animator animator;
+    public Lantern lantern;
+    private Canvas canvas;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRoot = transform.Find("Sprites");
         animator = GetComponent<Animator>();
+        canvas = transform.Find("Canvas").GetComponent<Canvas>();
     }
 
     // Update is called once per frame
@@ -37,5 +42,19 @@ public class PlayerController : MonoBehaviour
         }
         
         animator.SetFloat("Speed", speed * move.magnitude);
+
+        if (lantern.fuel <= 0f) {
+            Die();
+        }
+    }
+
+    private void Die() {
+        canvas.enabled = true;
+        StartCoroutine("ReturnToMenu");
+    }
+
+    private IEnumerator ReturnToMenu() {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
