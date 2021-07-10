@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 93d145575e5cba44598d02c89beb2d96
 TextureImporter:
   internalIDToNameTable:
@@ -26,6 +27,11 @@ TextureImporter:
   - first:
       213: -3678597144579906673
     second: FlickeringFlameSprite_7
+=======
+guid: e694c868581691b439ac61308a29073d
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +62,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -65,12 +75,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,6 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -105,6 +124,9 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,6 +135,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: FlickeringFlameSprite_0
@@ -282,6 +305,9 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+    sprites: []
+>>>>>>> 24b1560548d565e8c6062b9dd4e14780cb4d708e
     outline: []
     physicsShape: []
     bones: []
