@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private bool dead = false;
     private AudioSource[] allAudioSources;
     public string currentScene;
+    private bool invincible = false;
 
     // Start is called before the first frame update
     void Start()
@@ -109,5 +110,21 @@ public class PlayerController : MonoBehaviour
             footstepIndex = 0;
         }
         audioSource.Play();
+    }
+
+    public void TakeDamage(float dmg) {
+        if (!invincible) {
+            lantern.fuel -= dmg;
+            float duration = .5f;
+            int n = 3;
+            StartCoroutine(GetComponent<SpriteMaster>().Flash(duration, Color.clear, n));
+            StartCoroutine(InvincibilityFrames(duration*n));
+        }
+    }
+
+    private IEnumerator InvincibilityFrames(float duration) {
+        invincible = true;
+        yield return new WaitForSeconds(duration);
+        invincible = false;
     }
 }

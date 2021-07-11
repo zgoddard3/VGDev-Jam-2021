@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     private AudioSource audioSource;
     [Range(0f,1f)]
     public float maxVolume = 1f;
+    public float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -125,6 +126,12 @@ public class Enemy : MonoBehaviour
         public Edge(Node start, Node end) {
             this.start = start;
             this.end = end;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other) {
+        if (other.collider.CompareTag("Player")) {
+            other.collider.GetComponent<PlayerController>().TakeDamage(damage);
         }
     }
 }

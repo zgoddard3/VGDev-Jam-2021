@@ -29,6 +29,7 @@ public class Brazier : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.E) && (player.position - transform.position).magnitude < 5f) {
+            player.GetComponent<PlayerController>().lantern.burnRate = 0;
             lantern.fuel = lantern.maxFuel;
             lit = true;
             flame.SetActive(true);
