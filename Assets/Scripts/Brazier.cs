@@ -12,6 +12,7 @@ public class Brazier : MonoBehaviour
     public Sprite litSprite;
     private AudioSource audioSource;
     public string nextLevel;
+    public static bool lit;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Brazier : MonoBehaviour
         flame = transform.Find("Flame").gameObject;
         flame.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+        lit = false;
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class Brazier : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && (player.position - transform.position).magnitude < 5f) {
             lantern.fuel = lantern.maxFuel;
+            lit = true;
             flame.SetActive(true);
             audioSource.Play();
             GetComponent<SpriteRenderer>().sprite = litSprite;
