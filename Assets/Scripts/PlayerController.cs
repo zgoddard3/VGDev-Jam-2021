@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public Node nearest;
     public AudioClip deathClip;
     private bool dead = false;
+    private AudioSource[] allAudioSources;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,8 +74,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+    }
+
     private void Die()
     {
+        StopAllAudio();
         dead = true;
         audioSource.clip = deathClip;
         audioSource.Play();
