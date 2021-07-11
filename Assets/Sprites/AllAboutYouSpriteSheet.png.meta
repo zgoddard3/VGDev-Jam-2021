@@ -71,6 +71,12 @@ TextureImporter:
   - first:
       213: -7354129941828899269
     second: AllAboutYouSpriteSheet_22
+  - first:
+      213: 7313287966154981653
+    second: AllAboutYouSpriteSheet_23
+  - first:
+      213: 4065022375194340245
+    second: AllAboutYouSpriteSheet_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -630,7 +636,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,6 +644,48 @@ TextureImporter:
       bones: []
       spriteID: b3e693128c1e0f990800000000000000
       internalID: -7354129941828899269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 97
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5118ec268a40e7560800000000000000
+      internalID: 7313287966154981653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 54
+        width: 101
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b2975105cd96830800000000000000
+      internalID: 4065022375194340245
       vertices: []
       indices: 
       edges: []
