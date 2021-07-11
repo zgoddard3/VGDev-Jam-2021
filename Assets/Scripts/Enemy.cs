@@ -26,7 +26,6 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector2 move = destination - (Vector2)transform.position;
-        print(move);
 
         flipped = move.x < 0;
         if (move.magnitude > 1f) {
