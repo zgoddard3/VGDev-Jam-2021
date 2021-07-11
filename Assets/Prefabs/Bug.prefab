@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 5
-  maxVolume: 0.41
+  maxVolume: 0.191
 --- !u!82 &6088267132011733229
 AudioSource:
   m_ObjectHideFlags: 0

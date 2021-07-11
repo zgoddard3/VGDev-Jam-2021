@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     private List<Node> path;
     public LayerMask obstacles;
     private CircleCollider2D collider;
+    private AudioSource audioSource;
+    [Range(0f,1f)]
+    public float maxVolume = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         path = new List<Node>();
         collider = GetComponent<CircleCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -66,6 +70,7 @@ public class Enemy : MonoBehaviour
         }
 
         Vector2 displacement = player.transform.position - transform.position;
+        audioSource.volume = Mathf.Max(0, 1 - displacement.magnitude/10) * maxVolume;
         if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
             destination = player.transform.position;
         } else if(move.magnitude < .5f) {
