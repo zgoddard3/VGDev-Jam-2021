@@ -98,6 +98,8 @@ public class Enemy : MonoBehaviour
             if (!distances.ContainsKey(current) || distances[current] > distance) {
                 distances[current] = distance;
                 predecessors[current] = parent;
+            } else {
+                continue;
             }
             if (current == player.nearest) {
                 print("Search succeeded.");

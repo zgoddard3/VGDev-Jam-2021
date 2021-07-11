@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Node : MonoBehaviour
 {
@@ -12,11 +13,14 @@ public class Node : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
         if (!generated) {
+            print("Generating");
             Generate();
             generated = true;
+            SceneManager.sceneLoaded += delegate{generated = false;};
         }
     }
 
