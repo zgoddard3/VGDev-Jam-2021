@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 bugSpawn;
     private int bugCount = 0;
     public Node nearest;
-
+    public AudioClip deathClip;
+    private bool dead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,43 +35,48 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if (move.magnitude > 1f)
-        {
-            move.Normalize();
-        }
+        if (!dead) {
+            Vector2 move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if (move.magnitude > 1f)
+            {
+                move.Normalize();
+            }
 
-        rb.velocity = move * speed;
+            rb.velocity = move * speed;
 
-        if (Mathf.Abs(move.x) > 0)
-        {
-            flipped = move.x < 0;
-        }
-        if (flipped)
-        {
-            spriteRoot.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else
-        {
-            spriteRoot.localScale = Vector3.one;
-        }
+            if (Mathf.Abs(move.x) > 0)
+            {
+                flipped = move.x < 0;
+            }
+            if (flipped)
+            {
+                spriteRoot.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else
+            {
+                spriteRoot.localScale = Vector3.one;
+            }
 
-        animator.SetFloat("Speed", speed * move.magnitude);
+            animator.SetFloat("Speed", speed * move.magnitude);
 
-        if (lantern.fuel <= 0f)
-        {
-            Die();
-        }
-        if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50)
-        {
-            GameObject.Instantiate(bug, bugSpawn, transform.rotation);
-            bugSpawn = transform.position;
-            bugCount += 1;
+            if (lantern.fuel <= 0f)
+            {
+                Die();
+            }
+            if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50)
+            {
+                GameObject.Instantiate(bug, bugSpawn, transform.rotation);
+                bugSpawn = transform.position;
+                bugCount += 1;
+            }
         }
     }
 
     private void Die()
     {
+        dead = true;
+        audioSource.clip = deathClip;
+        audioSource.Play();
         canvas.enabled = true;
         StartCoroutine("ReturnToMenu");
     }

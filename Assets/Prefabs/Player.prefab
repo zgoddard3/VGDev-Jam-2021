@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 861876961444308355}
   - component: {fileID: 861876961444308358}
   - component: {fileID: 861876961444308353}
+  - component: {fileID: 7322229200175825392}
   - component: {fileID: 861876961444308352}
   - component: {fileID: 861876961444308359}
   - component: {fileID: 7076439559184510246}
@@ -287,6 +288,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7322229200175825392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861876961444308354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a523adbdae25e49b7f07cebd544120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &861876961444308352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +321,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 59597436658d19143a22ea0a6f456d88, type: 3}
   bug: {fileID: 475805458483620825, guid: 077d9e5e1d1d1fd4584363fedca62f06, type: 3}
   nearest: {fileID: 0}
-  Death_theme_no_air: {fileID: 8300000, guid: 9d52157ed2770de43b07030da6a887d2, type: 3}
+  deathClip: {fileID: 8300000, guid: 9d52157ed2770de43b07030da6a887d2, type: 3}
 --- !u!95 &861876961444308359
 Animator:
   serializedVersion: 3
