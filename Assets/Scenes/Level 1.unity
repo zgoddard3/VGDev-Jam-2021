@@ -44695,9 +44695,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 803703617304933470, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
     - target: {fileID: 7573997173112304401, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
-      propertyPath: litSprite
-      value: 
-      objectReference: {fileID: -2749451381591260690, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
+      propertyPath: nextLevel
+      value: Level 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7573997173112304402, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
       propertyPath: m_RootOrder
       value: 13

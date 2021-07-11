@@ -9897,7 +9897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65c458e6a6bd434495f95c61070afed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  litSprite: {fileID: 0}
+  litSprite: {fileID: -2749451381591260690, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
+  nextLevel: 
 --- !u!114 &7573997173112304400
 MonoBehaviour:
   m_ObjectHideFlags: 0

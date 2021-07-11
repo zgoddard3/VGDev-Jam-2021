@@ -11,6 +11,7 @@ public class Brazier : MonoBehaviour
     private GameObject flame;
     public Sprite litSprite;
     private AudioSource audioSource;
+    public string nextLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,13 +35,13 @@ public class Brazier : MonoBehaviour
         }
     }
 
-    private IEnumerator ReturnToMenu() {
+    private IEnumerator GoToNextLevel() {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(nextLevel);
     }
 
     private void EndLevel() {
         canvas.enabled = true;
-        StartCoroutine("ReturnToMenu");
+        StartCoroutine("GoToNextLevel");
     }
 }
