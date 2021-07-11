@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,8 +18,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bug;
     private Vector3 bugSpawn;
     private int bugCount = 0;
-    public AudioClip Death_theme_no_air;
-    private AudioSource[] allAudioSources;
+    public Node nearest;
 
     // Start is called before the first frame update
     void Start()
@@ -37,61 +35,58 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector2 move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if (move.magnitude > 1f) {
+        if (move.magnitude > 1f)
+        {
             move.Normalize();
         }
-        
+
         rb.velocity = move * speed;
 
-        if (Mathf.Abs(move.x) > 0) {
+        if (Mathf.Abs(move.x) > 0)
+        {
             flipped = move.x < 0;
         }
-        if (flipped) {
-            spriteRoot.localScale = new Vector3(-1f,1f,1f);
-        } else {
+        if (flipped)
+        {
+            spriteRoot.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else
+        {
             spriteRoot.localScale = Vector3.one;
         }
-        
+
         animator.SetFloat("Speed", speed * move.magnitude);
 
-        if (lantern.fuel <= 0f) {
+        if (lantern.fuel <= 0f)
+        {
             Die();
         }
-        if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50) {
+        if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50)
+        {
             GameObject.Instantiate(bug, bugSpawn, transform.rotation);
             bugSpawn = transform.position;
             bugCount += 1;
         }
     }
 
-    void StopAllAudio()
+    private void Die()
     {
-        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
-        foreach (AudioSource audioS in allAudioSources)
-        {
-            audioS.Stop();
-        }
-    }
-
-    private void Die() {
-        StopAllAudio();
         canvas.enabled = true;
         StartCoroutine("ReturnToMenu");
     }
 
-
-    private IEnumerator ReturnToMenu() {
-        //audioSource.clip = Death_theme_no_air;
-        //audioSource.Play();
-        //yield return new WaitWhile(() => audioSource.isPlaying);
+    private IEnumerator ReturnToMenu()
+    {
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void PlayFootstep() {
+    public void PlayFootstep()
+    {
         audioSource.clip = footsteps[footstepIndex];
         footstepIndex += 1;
-        if (footstepIndex >= footsteps.Length) {
+        if (footstepIndex >= footsteps.Length)
+        {
             footstepIndex = 0;
         }
         audioSource.Play();

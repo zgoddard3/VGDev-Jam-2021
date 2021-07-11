@@ -31,7 +31,7 @@ public class Lantern : MonoBehaviour
     public void AddFuel(float amount) {
         fuel += amount;
         audioSource.Play();
-        if (fuel < maxFuel) {
+        if (fuel > maxFuel) {
             fuel = maxFuel;
         }
     }
