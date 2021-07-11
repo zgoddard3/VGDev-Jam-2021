@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip deathClip;
     private bool dead = false;
     private AudioSource[] allAudioSources;
+    public string currentScene;
 
     // Start is called before the first frame update
     void Start()
@@ -90,13 +91,13 @@ public class PlayerController : MonoBehaviour
         audioSource.clip = deathClip;
         audioSource.Play();
         canvas.enabled = true;
-        StartCoroutine("ReturnToMenu");
+        StartCoroutine("RestartScene");
     }
 
-    private IEnumerator ReturnToMenu()
+    private IEnumerator RestartScene()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(currentScene);
     }
 
     public void PlayFootstep()
