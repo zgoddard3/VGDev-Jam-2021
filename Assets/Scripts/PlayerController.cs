@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
             {
                 Die();
             }
-            if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 50)
+            if ((transform.position - bugSpawn).magnitude > 5f && bugCount < 30)
             {
                 GameObject.Instantiate(bug, bugSpawn, transform.rotation);
                 bugSpawn = transform.position;

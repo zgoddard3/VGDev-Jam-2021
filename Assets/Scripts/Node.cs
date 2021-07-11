@@ -13,9 +13,6 @@ public class Node : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
         if (!generated) {
             print("Generating");
             Generate();
@@ -29,30 +26,44 @@ public class Node : MonoBehaviour
     {
         Vector2 displacement;
         float minDistance;
-        if (player.nearest == null) {
-            player.nearest = this;
-        }
-        if (player.nearest != this) {
-            displacement = player.transform.position - player.nearest.transform.position;
-            minDistance = displacement.magnitude;
-            displacement = player.transform.position - transform.position;
-            if (minDistance > displacement.magnitude) {
-                if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
-                    player.nearest = this;
+        if (player == null) {
+            GameObject go = GameObject.FindGameObjectWithTag("Player");
+            if (go != null) {
+                player = go.GetComponent<PlayerController>();
+            }
+        } else {
+            if (player.nearest == null) {
+                player.nearest = this;
+            }
+            if (player.nearest != this) {
+                displacement = player.transform.position - player.nearest.transform.position;
+                minDistance = displacement.magnitude;
+                displacement = player.transform.position - transform.position;
+                if (minDistance > displacement.magnitude) {
+                    if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
+                        player.nearest = this;
+                    }
                 }
             }
         }
-
-        if (enemy.nearest == null) {
-            enemy.nearest = this;
-        }
-        if (enemy.nearest != this) {
-            displacement = enemy.transform.position - enemy.nearest.transform.position;
-            minDistance = displacement.magnitude;
-            displacement = enemy.transform.position - transform.position;
-            if (minDistance > displacement.magnitude) {
-                if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
-                    enemy.nearest = this;
+        
+        if (enemy == null) {
+            GameObject go = GameObject.FindGameObjectWithTag("Enemy");
+            if (go != null) {
+                enemy = go.GetComponent<Enemy>();
+            }
+        } else {
+            if (enemy.nearest == null) {
+                enemy.nearest = this;
+            }
+            if (enemy.nearest != this) {
+                displacement = enemy.transform.position - enemy.nearest.transform.position;
+                minDistance = displacement.magnitude;
+                displacement = enemy.transform.position - transform.position;
+                if (minDistance > displacement.magnitude) {
+                    if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
+                        enemy.nearest = this;
+                    }
                 }
             }
         }
