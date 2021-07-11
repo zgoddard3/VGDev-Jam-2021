@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b651f04835f28488183ad8b6e2a021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 2.5
   nearest: {fileID: 0}
   obstacles:
     serializedVersion: 2

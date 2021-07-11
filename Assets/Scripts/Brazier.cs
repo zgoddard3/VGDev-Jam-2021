@@ -61,4 +61,8 @@ public class Brazier : MonoBehaviour
         canvas.enabled = true;
         StartCoroutine("GoToNextLevel");
     }
+
+    public void ReturnToMenu() {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

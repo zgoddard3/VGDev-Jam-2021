@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
-    private BackgroundMusic _instance;
+    private static BackgroundMusic _instance;
     // Start is called before the first frame update
     void Start()
     {

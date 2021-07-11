@@ -8,8 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenu;
     public GameObject optionsMenu;
-    public AudioMixerGroup sfx;
-    public AudioMixerGroup music;
+    public AudioMixer mixer;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +38,13 @@ public class MainMenu : MonoBehaviour
         optionsMenu.SetActive(false);
     }
 
-    public void SetSFXVolume() {
-        
+    public void SetMusicVolume(float value) {
+        value = (value - 1f) * 15;
+        mixer.SetFloat("MusicVolume", value);
+    }
+
+    public void SetSFXVolume(float value) {
+        value = (value - 1f) * 15;
+        mixer.SetFloat("SFXVolume", value);
     }
 }
