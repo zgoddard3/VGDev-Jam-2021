@@ -1,7 +1,178 @@
 fileFormatVersion: 2
 guid: 809043918aeab914dac2b926eca0272b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8922096173560175869
+    second: gate-Sheet_0
+  - first:
+      213: -6647666849061705566
+    second: gate-Sheet_1
+  - first:
+      213: -4478645758635731454
+    second: gate-Sheet_2
+  - first:
+      213: 3797540146139411114
+    second: gate-Sheet_3
+  - first:
+      213: -8063554392223835828
+    second: gate-Sheet_4
+  - first:
+      213: 8867324064783578646
+    second: gate-Sheet_5
+  - first:
+      213: 1098507439786841833
+    second: gate-Sheet_6
+  - first:
+      213: -8561395130032892178
+    second: gate-Sheet_7
+  - first:
+      213: -4008997288779539855
+    second: gate-Sheet_8
+  - first:
+      213: -2151348615062236369
+    second: gate-Sheet_9
+  - first:
+      213: -5417487897817440392
+    second: gate-Sheet_10
+  - first:
+      213: -8591228892194025984
+    second: gate-Sheet_11
+  - first:
+      213: 6193578363640365969
+    second: gate-Sheet_12
+  - first:
+      213: -234641436196152695
+    second: gate-Sheet_13
+  - first:
+      213: 5813355157162418064
+    second: gate-Sheet_14
+  - first:
+      213: -5174497000789579671
+    second: gate-Sheet_15
+  - first:
+      213: 4075658886529644639
+    second: gate-Sheet_16
+  - first:
+      213: -243220390054152971
+    second: gate-Sheet_17
+  - first:
+      213: -2804168211388649119
+    second: gate-Sheet_18
+  - first:
+      213: -2861187128415103460
+    second: gate-Sheet_19
+  - first:
+      213: 530825529007904153
+    second: gate-Sheet_20
+  - first:
+      213: 6520886161998210723
+    second: gate-Sheet_21
+  - first:
+      213: -3399424470414345671
+    second: gate-Sheet_22
+  - first:
+      213: 3338029138749147499
+    second: gate-Sheet_23
+  - first:
+      213: 6195671130081551153
+    second: gate-Sheet_24
+  - first:
+      213: 3151165744358861398
+    second: gate-Sheet_25
+  - first:
+      213: -4783069029431133360
+    second: gate-Sheet_26
+  - first:
+      213: -4159478689162562107
+    second: gate-Sheet_27
+  - first:
+      213: 6932238817420146574
+    second: gate-Sheet_28
+  - first:
+      213: 6506270643945641114
+    second: gate-Sheet_29
+  - first:
+      213: -5313182754096066385
+    second: gate-Sheet_30
+  - first:
+      213: 2250319318822612317
+    second: gate-Sheet_31
+  - first:
+      213: 8354572016882777350
+    second: gate-Sheet_32
+  - first:
+      213: 8192690518695378778
+    second: gate-Sheet_33
+  - first:
+      213: 2394838432179735954
+    second: gate-Sheet_34
+  - first:
+      213: -6844214754260203045
+    second: gate-Sheet_35
+  - first:
+      213: -961983177719004610
+    second: gate-Sheet_36
+  - first:
+      213: 6400569403461591905
+    second: gate-Sheet_37
+  - first:
+      213: 5297224239147168137
+    second: gate-Sheet_38
+  - first:
+      213: 3892788919956089187
+    second: gate-Sheet_39
+  - first:
+      213: 2693554958004391446
+    second: gate-Sheet_40
+  - first:
+      213: 6257766326950254050
+    second: gate-Sheet_41
+  - first:
+      213: 6490415874589588630
+    second: gate-Sheet_42
+  - first:
+      213: 3168618930366481067
+    second: gate-Sheet_43
+  - first:
+      213: 2244814790068724750
+    second: gate-Sheet_44
+  - first:
+      213: 8209726870443755331
+    second: gate-Sheet_45
+  - first:
+      213: -8264148169244729426
+    second: gate-Sheet_46
+  - first:
+      213: 743371829939399890
+    second: gate-Sheet_47
+  - first:
+      213: 6306971902344417351
+    second: gate-Sheet_48
+  - first:
+      213: -2895816271738649235
+    second: gate-Sheet_49
+  - first:
+      213: -8010577925354678465
+    second: gate-Sheet_50
+  - first:
+      213: 6849996109627404848
+    second: gate-Sheet_51
+  - first:
+      213: 720297131836216276
+    second: gate-Sheet_52
+  - first:
+      213: 6368697401924596082
+    second: gate-Sheet_53
+  - first:
+      213: -1990953081424567441
+    second: gate-Sheet_54
+  - first:
+      213: 4956918383983466395
+    second: gate-Sheet_55
+  - first:
+      213: -2289276037376730569
+    second: gate-Sheet_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +203,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +212,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +239,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +260,1204 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gate-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303e21b2dc85e2480800000000000000
+      internalID: -8922096173560175869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8698cb83ebeb3a0800000000000000
+      internalID: -6647666849061705566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20615b15967a8d1c0800000000000000
+      internalID: -4478645758635731454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2bce684a293b430800000000000000
+      internalID: 3797540146139411114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c491578b000881090800000000000000
+      internalID: -8063554392223835828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616b2bd71401f0b70800000000000000
+      internalID: 8867324064783578646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e65e9342beae3f00800000000000000
+      internalID: 1098507439786841833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 448
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee651ac4d70df2980800000000000000
+      internalID: -8561395130032892178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a9ac8d43e2d58c0800000000000000
+      internalID: -4008997288779539855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23df2b35dfd422e0800000000000000
+      internalID: -2151348615062236369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f1d93c57731d4b0800000000000000
+      internalID: -5417487897817440392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ec3b047d2d5c880800000000000000
+      internalID: -8591228892194025984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193445de4b204f550800000000000000
+      internalID: 6193578363640365969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ad0f16bd26ebcf0800000000000000
+      internalID: -234641436196152695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fd9d707bf2da050800000000000000
+      internalID: 5813355157162418064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 384
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968ec98b46e7038b0800000000000000
+      internalID: -5174497000789579671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58734dd926af8830800000000000000
+      internalID: 4075658886529644639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4b0b80858ef9cf0800000000000000
+      internalID: -243220390054152971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161bcbd6ed79519d0800000000000000
+      internalID: -2804168211388649119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16d5e647750b48d0800000000000000
+      internalID: -2861187128415103460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9959936910fdd5700800000000000000
+      internalID: 530825529007904153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6e9aa4a67de7a50800000000000000
+      internalID: 6520886161998210723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93abe208471d2d0d0800000000000000
+      internalID: -3399424470414345671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 320
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69cb09e0df035e20800000000000000
+      internalID: 3338029138749147499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13367a511127bf550800000000000000
+      internalID: 6195671130081551153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa3e48c803bbb20800000000000000
+      internalID: 3151165744358861398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bb59c3f002f9db0800000000000000
+      internalID: -4783069029431133360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c578a98b209646c0800000000000000
+      internalID: -4159478689162562107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e877082d972443060800000000000000
+      internalID: 6932238817420146574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a949ee0ddaaea4a50800000000000000
+      internalID: 6506270643945641114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa05f538f68c346b0800000000000000
+      internalID: -5313182754096066385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 256
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dee9d6f7dba3f10800000000000000
+      internalID: 2250319318822612317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d77b42cf661f370800000000000000
+      internalID: 8354572016882777350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f7c89be9842b170800000000000000
+      internalID: 8192690518695378778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dc68c9ddc2c3120800000000000000
+      internalID: 2394838432179735954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd945d571f67401a0800000000000000
+      internalID: -6844214754260203045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32482c856956a2f0800000000000000
+      internalID: -961983177719004610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163ef85f5f363d850800000000000000
+      internalID: 6400569403461591905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981b4fd2165838940800000000000000
+      internalID: 5297224239147168137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 192
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3692f87d5e6f50630800000000000000
+      internalID: 3892788919956089187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e08d696fd616520800000000000000
+      internalID: 2693554958004391446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5554db15d08d650800000000000000
+      internalID: 6257766326950254050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cf779a9d6921a50800000000000000
+      internalID: 6490415874589588630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2821d012239fb20800000000000000
+      internalID: 3168618930366481067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04e694782f272f10800000000000000
+      internalID: 2244814790068724750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34787c7771fcee170800000000000000
+      internalID: 8209726870443755331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf19f08609df4d80800000000000000
+      internalID: -8264148169244729426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 128
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dce193adbcf05a00800000000000000
+      internalID: 743371829939399890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740db97878dd68750800000000000000
+      internalID: 6306971902344417351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65c83c817effc7d0800000000000000
+      internalID: -2895816271738649235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3716a991d5b4d090800000000000000
+      internalID: -8010577925354678465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032362b3b23101f50800000000000000
+      internalID: 6849996109627404848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d394d3dc620ff900800000000000000
+      internalID: 720297131836216276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2713ba35b88226850800000000000000
+      internalID: 6368697401924596082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63283198b6be54e0800000000000000
+      internalID: -1990953081424567441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 64
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9710f1e1038ac440800000000000000
+      internalID: 4956918383983466395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a9857b29bda30e0800000000000000
+      internalID: -2289276037376730569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

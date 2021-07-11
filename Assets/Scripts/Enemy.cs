@@ -51,8 +51,6 @@ public class Enemy : MonoBehaviour
         if (move.magnitude > 1f) {
             move.Normalize();
         }
-
-        print(move.magnitude);
         
         rb.velocity = move * speed;
         
@@ -80,13 +78,19 @@ public class Enemy : MonoBehaviour
     }
 
     private void Search() {
+        print("Starting Search...");
         Node start = nearest;
         Heap<Edge> queue = new Heap<Edge>(100);
         Dictionary<Node, Node> predecessors = new Dictionary<Node,Node>();
         Dictionary<Node, float> distances = new Dictionary<Node, float>();
         queue.Insert(new Edge(null, start), 0);
         Node current = start;
+        int nodeCount = 0;
         while (queue.size > 0) {
+            if (nodeCount > 500) {
+                print("Search failed.");
+                break;
+            }
             float distance;
             Edge edge = queue.Pop(out distance);
             current = edge.end;
@@ -96,8 +100,10 @@ public class Enemy : MonoBehaviour
                 predecessors[current] = parent;
             }
             if (current == player.nearest) {
+                print("Search succeeded.");
                 break;
             }
+            nodeCount++;
             foreach (Node node in current.neighbors) {
                 Vector2 displacement = current.transform.position - node.transform.position;
                 queue.Insert(new Edge(current, node), distance + displacement.magnitude);
