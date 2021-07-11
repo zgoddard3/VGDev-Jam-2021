@@ -31,9 +31,6 @@ public class SpriteMaster : MonoBehaviour
 
     private void SetColor(Color color) {
         foreach (SpriteRenderer sprite in sprites) {
-            if (sprite.gameObject.name.StartsWith("Decal")) {
-                continue;
-            }
             sprite.color = color;
         }
     }
