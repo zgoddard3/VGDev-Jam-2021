@@ -38,7 +38,13 @@ public class Bug : MonoBehaviour
         if (chasing) {
             flipped = displacement.x < 0;
             displacement += offset;
-            Vector2 move = displacement.normalized * (-Mathf.Max(player.lantern.fuel/2, 2f) + displacement.magnitude);
+            Vector2 move;
+            if (!Brazier.lit) {
+                move = displacement.normalized * (-Mathf.Max(player.lantern.fuel/2, 2f) + displacement.magnitude);
+            } else {
+                move = -displacement.normalized;
+            }
+            
             if (move.magnitude > 1f) {
                 move.Normalize();
             }
