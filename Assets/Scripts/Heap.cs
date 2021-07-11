@@ -14,31 +14,68 @@ public class Heap<T> {
             return;
         }
 
-        HeapNode node = new HeapNode(data, value);
+        HeapNode<T> node = new HeapNode<T>(data, value);
 
         size++;
         int i = size - 1;
         harr[i] = node;
         while (i != 0 && harr[Parent(i)].value > harr[i].value) {
-            HeapNode temp = harr[Parent(i)];
-            harr[Parent(i)] = harr[i];
-            harr[i] = temp;
+            Swap(i, Parent(i));
             i = Parent(i);
         }
     }
 
     public T Pop(out float value) {
         if (size <= 0 ) {
-            return null;
+            value = 0;
+            return default(T);
         }
         if (size == 1) {
             size --;
-            return harr[0];
+            value = harr[0].value;
+            return harr[0].data;
         }
+
+        HeapNode<T> root = harr[0];
+        harr[0] = harr[size-1];
+        size--;
+        Heapify(0);
+        value = root.value;
+        return root.data;
     }
 
     private int Parent(int i) {
         return (i-1)/2;
+    }
+
+    private int Left(int i) {
+        return 2*i + 1;
+    }
+
+    private int Right(int i) {
+        return 2*i + 2;
+    }
+
+    private void Swap(int i, int j) {
+        HeapNode<T> temp = harr[i];
+        harr[i] = harr[j];
+        harr[j] = temp;
+    }
+
+    public void Heapify(int i) {
+        int l = Left(i);
+        int r = Right(i);
+        int smallest = i;
+        if (l < size && harr[l].value < harr[i].value) {
+            smallest = l;
+        }
+        if (r < size && harr[r].value < harr[smallest].value) {
+            smallest = r;
+        }
+        if (smallest != i) {
+            Swap(i, smallest);
+            Heapify(smallest);
+        }
     }
 }
 
@@ -50,3 +87,4 @@ public struct HeapNode<T> {
         this.value = value;
     }
 }
+

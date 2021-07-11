@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    public Node[] neighbors;
+    public List<Node> neighbors;
     private PlayerController player;
     private Enemy enemy;
     public LayerMask obstacles;
+    private static bool generated = false;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
+        if (!generated) {
+            Generate();
+            generated = true;
+        }
     }
 
     // Update is called once per frame
@@ -49,10 +54,40 @@ public class Node : MonoBehaviour
         }
     }
 
-    void OnDrawGizmosSelected() {
+    void OnDrawGizmos() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, .5f);
+        if (neighbors == null) {
+            return;
+        }
         Gizmos.color = Color.red;
         foreach (Node node in neighbors) {
             Gizmos.DrawLine(transform.position, node.transform.position);
+        }
+    }
+    
+    public void Generate() {
+        Transform graph = transform.parent;
+        if (graph == null) {
+            return;
+        }
+
+        for (int i = 0; i < graph.childCount; i++) {
+            Node node1 = graph.GetChild(i).GetComponent<Node>();
+            if (node1 == null) {
+                continue;
+            }
+            node1.neighbors.Clear();
+            for (int j = 0; j < graph.childCount; j++) {
+                Node node2 = graph.GetChild(j).GetComponent<Node>();
+                if (i == j || node2 == null) {
+                    continue;
+                }
+                Vector2 displacement = node2.transform.position - node1.transform.position;
+                if (!Physics2D.Raycast(node1.transform.position, displacement, displacement.magnitude, node1.obstacles)) {
+                    node1.neighbors.Add(node2);
+                }
+            }
         }
     }
 }
