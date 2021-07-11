@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Brazier : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Brazier : MonoBehaviour
     private AudioSource audioSource;
     public string nextLevel;
     public static bool lit;
+    public Image blackout;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class Brazier : MonoBehaviour
         flame.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         lit = false;
+        blackout.color = Color.clear;
     }
 
     // Update is called once per frame
@@ -41,7 +44,17 @@ public class Brazier : MonoBehaviour
 
     private IEnumerator GoToNextLevel() {
         yield return new WaitForSeconds(2f);
+        yield return FadeOut();
         SceneManager.LoadScene(nextLevel);
+    }
+
+    private IEnumerator FadeOut() {
+        float dt = 1f/30;
+        float n = 60;
+        for (int i = 0; i < n; i++) {
+            blackout.color = Color.Lerp(Color.clear, Color.black, (float)i/n);
+            yield return new WaitForSeconds(dt);
+        }
     }
 
     private void EndLevel() {

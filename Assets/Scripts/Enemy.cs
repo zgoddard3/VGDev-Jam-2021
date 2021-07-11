@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     [Range(0f,1f)]
     public float maxVolume = 1f;
     public float damage;
+    private bool chasing = false;
+    private float switchTimer = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,13 +70,20 @@ public class Enemy : MonoBehaviour
             path.RemoveAt(0);
         }
 
+        if (switchTimer > 0) {
+            switchTimer -= Time.deltaTime;
+        }
+
         Vector2 displacement = player.transform.position - transform.position;
         audioSource.volume = Mathf.Max(0, 1 - displacement.magnitude/10) * maxVolume;
-        if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles)) {
+        if (!Physics2D.Raycast(transform.position, displacement, displacement.magnitude, obstacles) && (switchTimer <= 0 || chasing)) {
             destination = player.transform.position;
-        } else if(move.magnitude < .5f) {
+            switchTimer = 2f;
+            chasing = true;
+        } else if (move.magnitude < .5f) {
             destination = path[0].transform.position;
             path.RemoveAt(0);
+            chasing = false;
         }
     }
 
