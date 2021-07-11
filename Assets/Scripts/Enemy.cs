@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public Node nearest;
     private List<Node> path;
     public LayerMask obstacles;
+    private CircleCollider2D collider;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour
         spriteRoot = transform.Find("SpriteRoot");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         path = new List<Node>();
+        collider = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
@@ -27,11 +29,29 @@ public class Enemy : MonoBehaviour
     {
         Vector2 move = destination - (Vector2)transform.position;
 
+        Vector2 laser = Vector2.Perpendicular(move);
+        laser.Normalize();
+        Vector2 sideMove = Vector2.zero;
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + collider.offset, laser, 2f, obstacles);
+        if (hit) {
+            sideMove += -laser * (1f - hit.distance / 2);
+        }
+        hit = Physics2D.Raycast((Vector2)transform.position + collider.offset, -laser, 2f, obstacles);
+        if (hit) {
+            sideMove += laser * (1f - hit.distance / 2);
+        }
+
+        move += sideMove * move.magnitude;
+
         flipped = move.x < 0;
         if (move.magnitude > 1f) {
             move.Normalize();
         }
+
+        print(move.magnitude);
+        
         rb.velocity = move * speed;
+        
 
         if (flipped) {
             spriteRoot.localScale = new Vector3(-1f,1f,1f);
