@@ -44698,6 +44698,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 803703617304933470, guid: 2865e265884e1304cbf397914886e3ed, type: 3}
+    - target: {fileID: 7573997172952777882, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7573997173112304401, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
       propertyPath: nextLevel
       value: Level 2
@@ -44749,6 +44753,14 @@ PrefabInstance:
     - target: {fileID: 7573997173112304412, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
       propertyPath: m_Name
       value: Brazier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573997173480124091, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819818995548764371, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
+      propertyPath: m_Name
+      value: Blackout
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7573997173112304403, guid: fe8ae07e0a01464418373be00717f6ac, type: 3}
