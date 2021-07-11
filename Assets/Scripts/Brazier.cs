@@ -15,6 +15,7 @@ public class Brazier : MonoBehaviour
     public string nextLevel;
     public static bool lit;
     public Image blackout;
+    public Vector3 teleport;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,10 @@ public class Brazier : MonoBehaviour
             audioSource.Play();
             GetComponent<SpriteRenderer>().sprite = litSprite;
             EndLevel();
+            GameObject go = GameObject.FindGameObjectWithTag("Enemy");
+            if (go != null) {
+                go.transform.position = teleport;
+            }
         }
     }
 
@@ -64,5 +69,10 @@ public class Brazier : MonoBehaviour
 
     public void ReturnToMenu() {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(teleport, .5f);
     }
 }
