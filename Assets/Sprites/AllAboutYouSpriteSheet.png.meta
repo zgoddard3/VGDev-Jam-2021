@@ -95,6 +95,15 @@ TextureImporter:
   - first:
       213: 6713981430077036854
     second: AllAboutYouSpriteSheet_30
+  - first:
+      213: -4895393090669418509
+    second: AllAboutYouSpriteSheet_31
+  - first:
+      213: 1115945854945842836
+    second: AllAboutYouSpriteSheet_32
+  - first:
+      213: -3928629120296485615
+    second: AllAboutYouSpriteSheet_33
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -738,7 +747,7 @@ TextureImporter:
         width: 49
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -759,7 +768,7 @@ TextureImporter:
         width: 49
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -780,7 +789,7 @@ TextureImporter:
         width: 49
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -801,7 +810,7 @@ TextureImporter:
         width: 38
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -822,7 +831,7 @@ TextureImporter:
         width: 46
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -830,6 +839,69 @@ TextureImporter:
       bones: []
       spriteID: 6399f48d98adc2d50800000000000000
       internalID: 6713981430077036854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 30
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f76fb2cbe1101cb0800000000000000
+      internalID: -4895393090669418509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 30
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496dd90b7d2ac7f00800000000000000
+      internalID: 1115945854945842836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllAboutYouSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 18
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11df87e31a4ba79c0800000000000000
+      internalID: -3928629120296485615
       vertices: []
       indices: 
       edges: []

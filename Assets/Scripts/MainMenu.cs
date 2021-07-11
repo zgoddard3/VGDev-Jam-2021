@@ -47,4 +47,8 @@ public class MainMenu : MonoBehaviour
         value = (value - 1f) * 15;
         mixer.SetFloat("SFXVolume", value);
     }
+
+    public void Exit() {
+        Application.Quit();
+    }
 }
